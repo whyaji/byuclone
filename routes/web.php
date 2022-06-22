@@ -7,6 +7,8 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\CalculatorController;
 use App\Http\Controllers\WatchlistController;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +26,5 @@ Route::get('/news', [NewsController::class, 'index']);
 Route::get('/author', [AuthorController::class, 'index']);
 Route::get('/calculator', [CalculatorController::class, 'index']);
 Route::get('/watchlist', [WatchlistController::class, 'index']);
+Route::get('/admin', [DashboardAdminController::class, 'index']);
+Route::get('/admin/form', [FormController::class, 'index']);
