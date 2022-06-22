@@ -1,10 +1,12 @@
-@extends('layouts.master')
-@section('title', 'home')
+@extends('dashboards.admins.layouts.master')
+@section('title', 'packages')
 @section('content')
 
-    <!--==================== MAIN ====================-->
-    <section class="home section" id="home">
-        <h2 class="section__title blogs__title">Daftar Paket byU</h2>
+<div class="content">
+    <div class="page-inner">
+        <div class="page-header">
+            <h4 class="page-title">Daftar Paket byU</h4>
+        </div>
         <table class="table table-hoover">
             <thead>
                 <th>Name Paket</th>
@@ -23,5 +25,6 @@
                 @endforeach
             </tbody>
         </table>
-    </section>
+    </div>
+</div>
 @endsection

@@ -59,18 +59,18 @@
                     <div class="collapse" id="base">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="components/avatars.html">
-                                    <span class="sub-item">Data</span>
+                                <a href="{{url('/admin/users')}}">
+                                    <span class="sub-item">Users</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components/buttons.html">
-                                    <span class="sub-item">Topping</span>
+                                <a href="{{url('/admin/packages')}}">
+                                    <span class="sub-item">Packages</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components/gridsystem.html">
-                                    <span class="sub-item">Pulsa</span>
+                                <a href="{{url('/admin/profile')}}">
+                                    <span class="sub-item">Profile</span>
                                 </a>
                             </li>
                         </ul>

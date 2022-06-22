@@ -9,6 +9,7 @@ use App\Http\Controllers\CalculatorController;
 use App\Http\Controllers\WatchlistController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\PackagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,8 @@ Route::get('/author', [AuthorController::class, 'index']);
 Route::get('/calculator', [CalculatorController::class, 'index']);
 Route::get('/watchlist', [WatchlistController::class, 'index']);
 Route::get('/admin', [DashboardAdminController::class, 'index']);
+
 Route::get('/admin/form', [FormController::class, 'index']);
+Route::post('/admin/add', [FormController::class, 'add']);
+
+Route::get('/admin/packages', [PackagesController::class, 'index']);
