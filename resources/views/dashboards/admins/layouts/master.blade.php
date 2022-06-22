@@ -22,8 +22,6 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/atlantis.min.css')}}">
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="{{asset('css/demo.css')}}">
 </head>
 <body>
 	<div class="wrapper sidebar_minimize">

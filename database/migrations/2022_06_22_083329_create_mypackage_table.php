@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('toppinglist', function (Blueprint $table) {
+        Schema::create('mypackage', function (Blueprint $table) {
             $table->id();
-            $table->string('type', 100);
-            $table->string('kuota', 10);
-            $table->string('active', 20);
-            $table->integer('price');
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->string('type', 20);
+            $table->integer('amount');
+            $table->string('active', 10);
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('toppinglist');
+        Schema::dropIfExists('mypackage');
     }
 };

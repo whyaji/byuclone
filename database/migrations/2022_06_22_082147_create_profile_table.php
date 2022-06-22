@@ -13,15 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('datalist', function (Blueprint $table) {
+        Schema::create('profile', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100);
-            $table->string('kuota', 10);
-            $table->string('active', 20);
-            $table->integer('price');
+            $table->foreignId('user_id')->references('id')->on('users');
+            $table->string('phone_number', 15);
+            $table->integer('pulsa');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('datalist');
+        Schema::dropIfExists('profile');
     }
 };
