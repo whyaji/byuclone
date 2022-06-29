@@ -64,7 +64,7 @@
                                             </span>
                                         </div>
                                         <div class="form-group">
-                                            <label for="">Mendapat</label>
+                                            <label for="">Kuota</label>
                                             <input type="text" class="form-control" name="value"
                                                 value="{{ old('value') }}">
                                             <span style="color:red">

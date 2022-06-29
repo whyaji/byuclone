@@ -13,6 +13,7 @@
                 <th>Value</th>
                 <th>Harga</th>
                 <th>Active</th>
+                <th>Action</th>
             </thead>
             <tbody>
                 @foreach ($list as $item)
@@ -21,6 +22,12 @@
                         <td>{{ $item->value }}</td>
                         <td>{{ $item->price }}</td>
                         <td>{{ $item->active }}</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="" class="btn btn-danger btn-xs">Delete</a>
+                                <a href="edit/{{ $item->package_id }}" class="btn btn-primary btn-xs">Edit</a>
+                            </div>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

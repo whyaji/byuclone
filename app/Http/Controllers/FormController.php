@@ -21,6 +21,8 @@ class FormController extends Controller
             'group_id'=>'required'
         ]);
 
+        $createdAt = now();
+
         $query = DB::table('packages')->insert([
             'package_id'=>$request->input('package_id'),
             'name'=>$request->input('name'),
@@ -28,6 +30,8 @@ class FormController extends Controller
             'active'=>$request->input('active'),
             'price'=>$request->input('price'),
             'group_id'=>$request->input('group_id'),
+            'created_at'=>$createdAt,
+            'updated_at'=>$createdAt,
         ]);
 
         if ($query) {
